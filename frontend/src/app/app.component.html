@@ -1,0 +1,35 @@
+<h1>Filmek</h1>
+<table class="table">
+        <thead>
+            <tr>
+            <th>modellazonosító</th>
+            <th>azonosító</th>
+            <th>consumables</th>
+            <th>név</th>
+            <th>tárhely</th>
+            <th>utasszám</th>
+            <th>max légköri sebesség</th>
+            <th>személyzet</th>
+            <th>hossz</th>
+            <th>modell</th>
+            <th>ár</th>
+            <th>gyártó</th>
+            <th>kép</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let _id of starwars">{{ _id }}</tr>
+        <tr *ngFor="let id of starwars">{{ id }}</tr>
+        <tr *ngFor="let consumables of starwars">{{ consumables }}</tr>
+        <tr *ngFor="let denomnation">{{ denomination }}</tr>
+        <tr *ngFor="let cargo_capacity of starwars">{{ cargo_capacity }}</tr>
+        <tr *ngFor="let passengers of starwars">{{ passengers }}</tr>
+        <tr *ngFor="let max_atmosphering_speed of starwars">{{ max_atmosphering_speed }}</tr>
+        <tr *ngFor="let crew of starwars">{{ crew }}</tr>
+        <tr *ngFor="let lengthiness of starwars">{{ lengthiness }}</tr>
+        <tr *ngFor="let model of starwars">{{ model }}</tr>
+        <tr *ngFor="let cost_in_credits of starwars">{{ cost_in_credits }}</tr>
+        <tr *ngFor="let manufacturer">{{ manufacturer }}</tr>
+        <tr><img *ngFor="let image of starwars" src="{{image}}" alt="nincs"></tr>
+    </tbody>
+</table>
